@@ -1,3 +1,7 @@
+/*
+Recorda que podes unar el mensaje x.even() a un número para saber si es par en lugar de usar la funcion modulo de 2  (x % 2)
+Quizás en esta estaSatisfecho() de comenzal convenia delegar en un método auxiliar el cálculo del peso de lo que comió 
+ */
 import comidas.*
 
 class Comensales {

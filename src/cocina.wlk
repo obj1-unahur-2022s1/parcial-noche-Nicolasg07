@@ -1,11 +1,16 @@
+/*
+ * Ojo con la sintaxís tienias mail escrito la palabra filter en los métodos ```lasAptasVegetarianas()``` y ```lasNoAptasVegetarianas()```
+ * En tieneBuenaOfertaVegetariana() convenia usar el valor absoluto abs() sobre la resta
+ */
+
 import comidas.*
 import comensales.*
 
 object cocina {
 	const todasLasComidas = []
 	
-	method lasAptasVegetarianas()= todasLasComidas.fiilter({ c => c.aptoVegetariano() })
-	method lasNoAptasVegetarianas()= todasLasComidas.fiilter({ c => !c.aptoVegetariano() })
+	method lasAptasVegetarianas()= todasLasComidas.filter({ c => c.aptoVegetariano() })
+	method lasNoAptasVegetarianas()= todasLasComidas.filter({ c => !c.aptoVegetariano() })
 	
 	method hayAlmenosMasVegetarianas()= self.lasAptasVegetarianas().size() >= self.lasNoAptasVegetarianas().size()
 	method almenosDiferenciaDeDos()= self.lasNoAptasVegetarianas().size() - self.lasAptasVegetarianas().size() <= 2
